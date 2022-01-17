@@ -1,0 +1,29 @@
+
+public class ReturnTypes {
+int stuId;
+String name;
+void display() {
+System.out.println(stuId +" : "+ name);
+}
+   public static void main(String[] args) {
+ReturnTypes stuid = new ReturnTypes(); 
+
+  stuid.display();
+
+paraConstructor emp2 = new paraConstructor(17610621, "MidhunKumar");
+
+}
+}
+class paraConstructor{
+int stuId;
+String name;
+paraConstructor(int stuId,String name) {
+this.stuId=stuId;
+this.name=name;
+System.out.println(stuId +" : "+ name);
+}
+}
+
+
+
+

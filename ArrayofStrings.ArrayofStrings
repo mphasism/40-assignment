@@ -1,0 +1,39 @@
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class  ArrayofStrings {
+
+	public static void main(String[] args) {
+		
+		
+		String[] listOfnames= {"Midhun","Kumar"};
+		String trueExample="Midhun",falseExample="Chowdary";
+
+		
+		boolean a=nameVerification(trueExample, listOfnames);
+		boolean b=nameVerification(falseExample, listOfnames);
+		
+		output(a);
+		output(b);
+		
+
+	}
+static boolean nameVerification(String name,String[] listOfname) {
+	boolean flag=false;
+	Pattern p = Pattern.compile(name);
+	for(int i=0; i<listOfname.length; i++) {
+		Matcher m =p.matcher(listOfname[i]);
+		if(m.find()) {
+			flag = true;
+		}
+	}
+	return flag;
+}
+
+static void output(boolean result) {
+	if(result)
+		System.out.println("name verification passed");
+	else
+		System.out.println("name verification failed");
+}
+}

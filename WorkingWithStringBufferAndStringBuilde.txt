@@ -1,0 +1,14 @@
+public class WorkingWithStringBufferAndStringBuilde 
+	{  
+		public static void main(String[] args)
+		{
+	String str="hello midhun ";
+	   System.out.println("String : "+str);
+	   StringBuffer sb=new StringBuffer();
+	sb.append(str);
+	    System.out.println("StringBuffer : "+sb);
+	     StringBuilder sb1=new StringBuilder();
+	sb1.append(str);
+	       System.out.println("StringBuilder : "+sb1); 
+	       } 
+		}
